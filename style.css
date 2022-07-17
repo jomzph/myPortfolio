@@ -1,31 +1,27 @@
-body {
-  background-image: #d6d6d6;
+body, html{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 h1 {
   color: rgb(255, 255, 255);
 }
-.joemar {
-  font-family:
-}
 
 .pictureAndInfo {
-  width: 90%;
-  height: 100%;
-  margin: 10px 5% 0 5%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 
 .name {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0%;
+  font-size: 80px;
 }
 
 .info {
@@ -35,11 +31,11 @@ h1 {
   color: azure;
 }
 
-.profileImage {
+/* .profileImage {
   border-radius: 50%;
   border: white solid 5px;
   margin: 0 0 10px 0;
-}
+} */
 
 /* .details {
   display: flex;
