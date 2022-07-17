@@ -1,5 +1,4 @@
 body {
-  
   background-image: #d6d6d6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -12,7 +11,7 @@ h1 {
 
 .pictureAndInfo {
   width: 90%;
-  height: 500px;
+  height: 100%;
   margin: 10px 5% 0 5%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
   background-repeat: no-repeat;
@@ -42,7 +41,7 @@ h1 {
   margin: 0 0 10px 0;
 }
 
-.details {
+/* .details {
   display: flex;
   flex-wrap: wrap;
 }
@@ -51,4 +50,4 @@ h1 {
   background-color: rgb(208, 252, 195, 0.5);
   flex-grow: 1;
   align-content: center;
-}
+} */
