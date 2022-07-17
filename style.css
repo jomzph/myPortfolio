@@ -1,21 +1,20 @@
 body {
   
-  background-image: linear-gradient(
-    to right,
-    rgb(143, 143, 143),
-    rgb(233, 233, 233),
-    rgb(168, 168, 168)
-  );
+  background-image: #d6d6d6;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
   color: rgb(255, 255, 255);
 }
+.joemar {
+  font-family:
+}
 
 .pictureAndInfo {
-  width: 100%;
+  width: 90%;
   height: 500px;
-  background-image: url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
+  margin: 10px 5% 0 5%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
@@ -24,37 +23,32 @@ h1 {
   align-items: center;
   flex-direction: column;
 }
+
 .name {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0%;
 }
 
-.switch  {
-
-}
-
 .info {
   border-radius: 10px 10px;
   padding: 20px;
-
   text-align: center;
   color: azure;
 }
+
 .profileImage {
   border-radius: 50%;
   border: white solid 5px;
   margin: 0 0 10px 0;
 }
+
 .details {
   display: flex;
   flex-wrap: wrap;
-
 }
+
 .details > div {
   background-color: rgb(208, 252, 195, 0.5);
   flex-grow: 1;
   align-content: center;
-}
-.details > h3 {
-  
 }
