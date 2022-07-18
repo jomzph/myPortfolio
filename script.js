@@ -9,11 +9,13 @@ let y = 0
 
 function clickMe() {
     if (x == 0) {
-        document.querySelector(".name").style.backgroundColor = "red"; 
+        // document.querySelector(".name").style.backgroundColor = "red"; 
+        document.querySelector(".job").style.fontSize = "40px";
         x = 1
     }
     else {
-        document.querySelector(".name").style.backgroundColor = "blue";
+        // document.querySelector(".name").style.backgroundColor = "blue";
+        document.querySelector(".job").style.fontSize = "20px";
         x = 0
     }
 }

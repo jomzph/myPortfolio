@@ -17,11 +17,16 @@ h1 {
   flex-direction: column;
   height: 100%;
 }
-
+.job {
+  font-size: 20px;
+}
 .name {
   font-family: 'Josefin Sans', sans-serif;
   margin: 0%;
   font-size: 75px;
+}
+.name:hover {
+  text-shadow: 0 0 6px rgb(226, 223, 223);
 }
 
 .info {
