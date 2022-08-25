@@ -1,53 +1,56 @@
-body {
+* {
+  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
   background-color: black;
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  width: 100%;
-  height: auto;
-  padding: 10px 0 10px 0;
-  position: fixed;
+}
+.navi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 40px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: rgb(0, 153, 255);
+}
+nav img {
+  width: 60px;
 }
 
-li {
-  float: left;
-  list-style-type: none;
-  padding: 0 5px 0 5px;
-}
-a {
-  text-decoration: none;
-  padding: 16px;
-  color: aliceblue;
-}
-li a:hover {
-  background-color: #cacaca;
-  text-decoration: none;
-  transition-delay: 0.1s;
-  transition-timing-function: ease-in-out;
-}
-.center {
-  background-color: aquamarine;
-}
 h1 {
   color: rgb(255, 255, 255);
 }
-
-.pictureAndInfo {
+.center {
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+}
+.pictureAndInfo {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 50% 20%;
   gap: 20px;
-  background-size: cover;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  
 }
 
 .job {
@@ -77,19 +80,3 @@ h1 {
 .second {
   margin: 0 0 0 0;
 }
-/* .profileImage {
-  border-radius: 50%;
-  border: white solid 5px;
-  margin: 0 0 10px 0;
-} */
-
-/* .details {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.details > div {
-  background-color: rgb(208, 252, 195, 0.5);
-  flex-grow: 1;
-  align-content: center;
-} */
