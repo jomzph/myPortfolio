@@ -41,7 +41,7 @@ nav ul li a:hover {
   transition: all 0.5s ease;
 }
 nav img {
-  width: 50px;
+  width: 60px;
 }
 
 .pictureAndInfo {
@@ -90,15 +90,20 @@ nav img {
 }
 
 .icons{
-  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-gap: 40px;
-height: 80px;
+  gap: 40px;
+  height: 80px;
 }
 .icons img {
-  width: 50px
+  width: 40px;
+  transition: all 0.2s ease;
+}
+.icons img:hover {
+    transform: scale(1.3);
+    
 }
