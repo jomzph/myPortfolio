@@ -5,10 +5,11 @@
   font-family: 'Manrope', sans-serif;
 }
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
+  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0), rgba(0,0,0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%); */ 
 }
 .header {
   background-color: black;
@@ -36,7 +37,7 @@ nav ul li a{
  font-size: larger;
 }
 nav ul li a:hover {
-  color: rgb(0, 153, 255);
+  color:#58cced;
   text-decoration: none;
   transition: all 0.5s ease;
 }
@@ -51,8 +52,8 @@ nav img {
   flex-direction: column;
   height: calc(100vh - 160px);
   }
-  nav button {
-    background-color: rgb(0, 153, 255);
+nav button {
+    background-color: #58cced;
     padding: 10px 40px;
     border-radius: 10px;
     transition: all 0.5s ease;
@@ -60,7 +61,7 @@ nav img {
     
   }
   nav button:hover {
-    background-color: rgb(0, 91, 151);
+    background-color: #58cced;
     
   }
   nav button a {
@@ -75,12 +76,23 @@ nav img {
 .job {
   font-size: 30px;
   margin: 0%;
+  animation: toLeft;
+  animation-duration: 1s;
 }
+
+.job2 {
+  margin: 10px;
+  animation: toRight;
+  animation-duration: 1s;
+}
+
 .name {
   color: rgb(255, 255, 255);
   margin: 0%;
   font-size: 75px;
 
+  animation: toRight;
+  animation-duration: 1s;
 }
 
 .info {
@@ -90,7 +102,7 @@ nav img {
 }
 
 .icons{
-  background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  
   display: flex;
   width: 100%;
   justify-content: center;
@@ -106,4 +118,29 @@ nav img {
 .icons img:hover {
     transform: scale(1.3);
     
+}
+span {
+  color: #58cced;
+}
+
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
