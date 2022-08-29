@@ -14,23 +14,31 @@ body {
 .header {
   background-color: black;
   height: 80px;
+  transition: ease all .3s;
+  padding: 10px 10px;
 }
 .navi {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: auto 15px;
+  width: 100%;
 }
+
+nav ul {
+  padding: 0;
+  margin: 0;
+
+}
+
 nav ul li {
   list-style-type: none;
   display: inline-block;
   padding: 5px 30px;
   letter-spacing: 3px;
+
 }
-nav ul {
-  padding: 0;
-  margin: 0;
-}
+
 nav ul li a{
   color: white;
   text-decoration: none;
@@ -42,7 +50,9 @@ nav ul li a:hover {
   transition: all 0.5s ease;
 }
 nav img {
+  
   width: 60px;
+  transition: ease all .3s;
 }
 
 .pictureAndInfo {
@@ -74,7 +84,7 @@ nav button {
   }
 
 .job {
-  font-size: 30px;
+  font-size: 35px;
   margin: 0%;
   animation: toLeft;
   animation-duration: 1s;
@@ -82,8 +92,10 @@ nav button {
 
 .job2 {
   margin: 10px;
+  font-size: 25px;
   animation: toRight;
   animation-duration: 1s;
+
 }
 
 .name {
@@ -104,10 +116,10 @@ nav button {
 .icons{
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
+  
   height: 80px;
 }
 .icons img {
@@ -120,6 +132,13 @@ nav button {
 }
 span {
   color: #58cced;
+}
+
+#edit {
+  
+  width: 100vw;
+  margin: 100px auto;
+  padding: 0 10px;
 }
 
 @keyframes toRight {
@@ -145,6 +164,10 @@ span {
 }
 @media all and (max-width: 600px) {
   .header {
-    height: 120px;
+    height: 110px;
+  }
+
+  nav img {
+    width: 70px;
   }
 }
