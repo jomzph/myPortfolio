@@ -4,84 +4,22 @@
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
 }
-body {
-  background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0), rgba(0,0,0, 0.7)), url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
+
+.main {
+  background-image: url(https://cdn.pixabay.com/photo/2015/09/05/23/28/coding-926242_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 80%, 0 100%); */ 
 }
-.header {
-  background-color: black;
-  height: 80px;
-  transition: ease all .3s;
-  padding: 10px 10px;
-}
-.navi {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: auto 15px;
-  width: 100%;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 5px 30px;
-  letter-spacing: 3px;
-
-}
-
-nav ul li a{
-  color: white;
-  text-decoration: none;
- font-size: larger;
-}
-nav ul li a:hover {
-  color:#58cced;
-  text-decoration: none;
-  transition: all 0.5s ease;
-  }
 
 nav img {
-  width: 60px;
+  width: 50px;
   transition: ease all .3s;
 }
 
 .pictureAndInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: calc(100vh - 160px);
-  }
-nav button {
-    background-color: #58cced;
-    padding: 10px 40px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-    letter-spacing: 2px;
-    
-  }
-  nav button:hover {
-    background-color: #58cced;
-    
-  }
-  nav button a {
-    color: #f0f8ff;
-    font-size: 20px;
-  }
-  nav button a:hover {
-   text-decoration: none;
-   color: #f0f8ff;
-  }
+  height: 100vh;
+  padding: 200px 10px;
+}
 
 .job {
   font-size: 35px;
@@ -95,14 +33,12 @@ nav button {
   font-size: 25px;
   animation: toRight;
   animation-duration: 1s;
-
 }
 
 .name {
   color: rgb(255, 255, 255);
   margin: 0%;
-  font-size: 7rem;
-
+  font-size: 4rem;
   animation: toRight;
   animation-duration: 1s;
 }
@@ -113,34 +49,30 @@ nav button {
   color: azure;
 }
 
-.icons{
+.icons {
   display: flex;
   width: 100%;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 5rem;  
-  height: 80px;
+  padding: 0 5rem;
+  height: 20px;
 }
 
 .icons img {
-  width: 40px;
-  transition: all 0.2s ease;
+  width: 30px;
+  transition: all 0.1s ease;
 }
+
 .icons img:hover {
-    transform: scale(1.3);
-    
+  transform: scale(1.3);
 }
+
 span {
   color: #58cced;
 }
 
-#edit {
-  
-  width: 100vw;
-  margin: 100px auto;
-  padding: 0 10px;
-}
+
 
 @keyframes toRight {
   0% {
@@ -161,14 +93,5 @@ span {
   100% {
     opacity: 1;
     transform: translate(0);
-  }
-}
-@media all and (max-width: 600px) {
-  .header {
-    height: 110px;
-  }
-
-  nav img {
-    width: 70px;
   }
 }

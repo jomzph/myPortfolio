@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
   <title>Joemar's Personal Website</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,116 +14,76 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="main" id="main">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a href="index.html"><img src="https://i.ytimg.com/an/_GECPqdljOqb8-9e8BtYXA/featured_channel.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Joemar Menes</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            </li>
+          </ul>
 
-  <div class="header">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="header">
     <nav class="navi">
       <div>
         <a href="index.html"><img src="https://i.ytimg.com/an/_GECPqdljOqb8-9e8BtYXA/featured_channel.jpg" alt=""></a>
       </div>
       <ul>
         <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="photo Editing.html">Experience</a></li>
-        <li><a href="#Portfolio">About</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#About">About</a></li>
       </ul>
-      <!-- <button class="button" id="button"><a href="http://">Contact</a></button> -->
+
   </nav>
-  </div>
+  </div> -->
   <div class="center">
+
       <div class="pictureAndInfo">
+
           <div class="info">
             <h1 class="name" id="joemar">Hi! I'm <strong>Joemar</strong></h1>
-            <h3 class="job"><span>Front-end Developer</span>,</h3> <h4 class="job2"><span>Graphic Designer</span> and <span>SEO Specialist</span></h4>
+            <h3 class="job"><span>Front-end Developer</span></h3> <h4 class="job2"><span>Graphic Designer</span> and <span>SEO Specialist</span></h4>
          </div>
-      </div>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/joemar-frontend-developer/" target="_blank" ><img src="icons\linkedin white.png" alt="linkedin" srcset=""></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=joemarmenesnew@gmail.com" target="_blank" ><img src="icons\gmail white.png" alt="gmail" srcset=""></a>
-        <a href="https://www.upwork.com/freelancers/~01bc0214dc867a347a?s=1110580761541988352" target="_blank" ><img src="icons\upwork white.png" alt="upwork" srcset=""></a>
-        <a href="https://github.com/jomzph" target="_blank" ><img src="icons\github white.png" alt="github" srcset=""></a>
-        <a href="https://www.behance.net/Joemarmenes" target="_blank" ><img src="icons\behance.png" alt="github" srcset=""></a>
-       </div>
-  </div>
-  <!-- <div class="details">
-  <div class="spec">
-    <h3>Specialization:</h3>
-      <ul>
-        <li> Product Research </li>
-        <li> Order Fulfillment </li>
-        <li> eBay File Exchange Research and Listing </li>
-        <li> Photo Editing (ADVANCE / HIGH LEVEL) </li>
-        <li> Amazon FBA Product Research </li>
-        <li> Data Entry / Data Collection </li>
-        <li> Search Engine Optimization (SEO) </li>
-        <li> MS OFFICE (EXCEL / WORD / Publisher) </li>
-        <li> Web Research </li>
-        <li> Online Research </li>
-        <li> Making LOGO (Illustrator / Photoshop) </li>
-        <li> Google docs </li>
-      </ul>
-  </div> -->
 
-  <!-- <div class="tools">
-      <h3>TOOLS:</h3>
-    <ol>
-      <li>ZikAnalytics</li>
-      <li>Autods</li>
-      <li>SKUgrid</li>
-      <li>Shopmaster</li>
-      <li>DSM Tool</li>
-      <li>Google Spreadsheet</li>
-      <li>Microsoft Excel</li>
-      <li><a href="photo Editing.html">Adobe Photoshop </a>/ Adobe Illustrator</li>
-    </ol>
-  </div>   
-    <div class="exp"> 
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Number of Years</th>
-          <th>Position</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2 Years</td>
-          <td>Graphic Artist</td>
-          <td>2014-2015</td>
-        </tr>
-        <tr>
-          <td>2 Years</td>
-          <td>Computer Technician</td>
-          <td>2015-2017</td>
-        </tr>
-      </tbody>
-      <tfoot>
-      </tfoot>
-    </table>
-    </div>
-    <div class="skill">
-        <h3>Skills</h3>
-          <table cellspacing="10">
-            <tr>
-              <td>Photoshop</td>
-              <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Ebay Management</td>
-              <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Video Editing</td>
-              <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>Search Engine Optimization</td>
-              <td>⭐⭐⭐⭐</td>
-            </tr>
-          </table>
-    </div> -->
-  <!-- </div>       -->
-      <!-- <h3><a href="contact.html">Contact Me</a></h3> -->
+         <div class="icons">
+          <a href="https://www.linkedin.com/in/joemar-frontend-developer/" target="_blank"><img src="icons\linkedin white.png"
+              alt="linkedin" srcset=""></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=joemarmenesnew@gmail.com" target="_blank"><img
+              src="icons\gmail white.png" alt="gmail" srcset=""></a>
+          <a href="https://www.upwork.com/freelancers/~01bc0214dc867a347a?s=1110580761541988352" target="_blank"><img
+              src="icons\upwork white.png" alt="upwork" srcset=""></a>
+          <a href="https://github.com/jomzph" target="_blank"><img src="icons\github white.png" alt="github" srcset=""></a>
+          <a href="https://www.behance.net/Joemarmenes" target="_blank"><img src="icons\behance.png" alt="github" srcset=""></a>
+         </div>
+
+         
+      </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 <script src="script.js" charset="utf-8"></script>
 </html>
