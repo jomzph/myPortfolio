@@ -1,9 +1,3 @@
-/* function clickMe(){
-
-document.querySelector(".name").style.backgroundColor = "red";
-
-}*/
-
 let x = 0
 let y = 0
 
