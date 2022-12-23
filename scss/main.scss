@@ -22,6 +22,9 @@ nav img {
   transition: ease all .3s;
 }
 
+.nav-item .nav-link:hover {
+  color: white;
+}
 .center {
   display: flex;
   align-items: center;
@@ -86,7 +89,4 @@ footer {
 span {
   color: #35b5ff;
 }
-
-
-
 

@@ -221,6 +221,10 @@ nav img {
   transition: ease all 0.3s;
 }
 
+.nav-item .nav-link:hover {
+  color: white;
+}
+
 .center {
   display: flex;
   align-items: center;
